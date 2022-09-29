@@ -1,8 +1,11 @@
 import React from "react";
+import { Greet } from "./components/01_TypingProps";
 
 const App: React.FC = () => {
 	return (
-		<h1>Hello World with React and TS</h1>
+		<div>
+			<Greet name='John'/>
+		</div>
 	)
 }
 
