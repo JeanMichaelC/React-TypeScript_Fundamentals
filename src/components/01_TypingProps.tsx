@@ -17,4 +17,4 @@ const Greet = (props: GreetProps) => {
 	)
 }
 
-export { Greet }
+// export { Greet }
