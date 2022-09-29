@@ -1,30 +1,14 @@
 import React from "react";
-import { Greet, Person, PersonList } from "./components/02_BasicPropsTypes";
+import { Status, Heading, Oscar } from "./components/03_AdvancedProps";
 
 const App: React.FC = () => {
-	const personName = {
-		first: 'Brucie',
-		last: 'Waynie'
-	}
-	const nameList = [
-		{
-			first: 'Bruce',
-			last: 'Wayne'
-		},
-		{
-			first: 'Clark',
-			last: 'Kent'
-		},
-		{
-			first: 'Princess',
-			last: 'Diana'
-		}
-	]
 	return (
 		<div>
-			<Greet name='John' messageCount={20} isLoggedIn/>
-			<Person name={personName}/>
-			<PersonList names={nameList} />
+			<Status status="loading"/>
+			<Oscar>
+				<Heading>Oscar goes to Leonardo!</Heading>
+			</Oscar>
+
 		</div>
 	)
 }
