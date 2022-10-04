@@ -1,19 +1,11 @@
 import React from "react";
-import { ThemeContextProvider } from "./components/context/ThemeContext";
-import { Box } from "./components/12_useContextHook";
-import { UserContextProvider } from "./components/context/UserContext";
-import { User } from "./components/13_useContextFutureValues";
+import { DomRef, MutableRef } from "./components/14_useRefHook";
 
 const App: React.FC = () => {
 	return (
 		<div>
-			<ThemeContextProvider>
-				<Box />
-			</ThemeContextProvider>
-
-			<UserContextProvider>
-				<User />
-			</UserContextProvider>
+			<DomRef />
+			<MutableRef />
 		</div>
 	)
 }
